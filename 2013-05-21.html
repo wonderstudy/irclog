@@ -1,0 +1,123 @@
+<html>
+<head>
+<title>IRC Logs</title>
+</head>
+<body>
+<pre>
+Time  Nick    Message
+16:24 melodie hi
+16:42 kotux   hello
+16:43 melodie welcome kotux !
+16:43 kotux   whoa, we all have voice around here.
+16:45 melodie yes, we want a chan open however protected against possible spammers
+16:47 melodie so what are you studing at #ubuntu-classroom kotux ?
+16:48 kotux   https://wiki.ubuntu.com/UbuntuOpenWeek
+16:49 kotux   Open Week  happens today and tomorrow.  Currently, it's Ubuntu Quality
+16:49 kotux   and how to get involved in it.
+16:50 melodie kotux it seems not possible to answer at #ubuntu-classroom, I get "* #ubuntu-classroom :Cannot send to channel"
+16:51 melodie is that for every people attending there?
+16:51 kotux   you must join #ubuntu-classroom-chat
+16:51 kotux   yes, the classroom is reserved for the teacher.
+16:51 kotux   the classroom chat is where you can ask your questions.  There are only 10 min remaining of the current session.
+16:51 melodie ok
+16:52 melodie and what are you specifically interested in?
+16:52 kotux   I'm interested in writing documentation and probably testcases in the near future
+16:52 melodie ok
+16:53 melodie sort of programs meant to test other programs? Benchmark kind?
+16:53 kotux   yeah, in ubuntu quality, we call them 'testcases'
+16:54 kotux   Another thing, although you missed out on the sessions, you can still check out the irc logs.
+16:54 melodie ok
+16:55 melodie I am not interested for myself right now, however here the chan is logged to, so one day or another someone else might be interested
+16:59 kotux   sure
+17:00 kotux   Anyway, I won't be around for a while.   I have to study.
+17:00 melodie you can stay logged and type /away if you want to
+17:00 kotux   cool
+17:01 kotux   what if I want to return?
+17:01 melodie and here is also meant to ask for help in studying when needed (provided enough people are logged in and available)
+17:01 melodie you can return any time, wait a sec I voice you auto
+17:01 melodie your nick isn't registered, could you register it ?
+17:02 melodie http://freenode.net/faq.shtml#contents-userregistration
+17:03 kotux   What i mean was if there is a command for 'away,' what's the exact opposite?
+17:06 kotux   k
+17:17 melodie kotux the opposite in xchat is /back
+17:17 melodie in irssi it's the same
+17:17 kotux   sweet thanks
+17:18 melodie you do /away and also /away in irssi and in other clients I don't know
+17:18 melodie can you register your nick so I can voice you ?
+17:18 kotux   I registered
+17:18 melodie so I can "autovoice" you
+17:18 melodie good!
+17:18 melodie thanks
+17:18 kotux   no problem, atm do you have any plans for the wonderstudy project?
+17:20 melodie let #wonderstudy be known at all places we have listed so far and then restart viewing the courses I started with : cs50 at cs50.tv
+22:55 pdurbin kotux: I guess one of my plans is to improve our website: https://github.com/wonderstudy/wonderstudy.github.io/issues
+22:55 pdurbin as time allows :)
+22:57 melodie pdurbin what if we would not take more time on this but focus on letting people who are already taking courses know about the present chan?
+23:02 pdurbin sure. no objections
+23:04 melodie imo there are enough links on that github page :)
+23:22 pdurbin the links we have are an excellent start
+23:22 pdurbin I don't mind having that open issue to remind me to look at the ones ubitux typed up for us though
+23:26 melodie sure, you mean we need to add some from his list, right ?
+23:26 melodie how did you solve that ?
+23:32 ubitux  you should store all the links into a json file, python array, or something
+23:32 ubitux  with tags, description, etc
+23:32 ubitux  and then generate a page with whatever layout you want
+23:32 ubitux  it will also ease scripting to check if the website is still up etc
+23:34 melodie ubitux you can do it if you want to
+23:34 ubitux  nope
+23:34 ubitux  i'm just an idea thrower
+23:35 melodie all I wanted was a chan where we can have discussions about the courses we are taking, ask and get help
+23:35 ubitux  and i throw them far away from me
+23:35 melodie don't throw too much we will be overwhelmed :)
+23:47 pdurbin ubitux: I like the way you think. I'd probably use YAML
+23:47 ubitux  why yaml?
+23:48 pdurbin I find it more readable than JSON
+23:48 ubitux  i'm curious about the benefit over json
+23:48 ubitux  ah...
+23:48 pdurbin the bottom of this file has some YAML: https://github.com/pdurbin/scripts/blob/master/playdates
+23:48 pdurbin with tags, etc.
+23:48 melodie ubitux do you use Archlinux?
+23:49 ubitux  melodie: yes
+23:49 melodie I think you helped me many times in the paste years, on the chan arch-fr
+23:49 ubitux  possibly
+23:50 ubitux  pdurbin: benefit of json is that it's really simple to use; typically with python, you load the data into a dict in 2 lines
+23:50 ubitux  pdurbin: and it also has the advantage not to even require a page generation, if you use javascript for the layout
+23:51 ubitux  OTOH, it seems you can get a text friendly output with yaml
+23:51 ubitux  so well, just a matter of taste i guess
+23:52 melodie ubitux is there one or the other of the courses online which you have followed or intend to follow?
+23:52 pdurbin python 2.6 and higher supports JSON natively, which is great. I used python -m json.tool from the command line all the time for pretty printing
+23:52 ubitux  i'm following a few courses from coursera
+23:52 ubitux  but i'm not taking the exam
+23:52 ubitux  just watching the videos
+23:53 ubitux  when i'm not too busy..
+23:53 melodie ubitux out of curiosity, which ones do you follow?
+23:53 ubitux  melodie: my coursera-dl directory says dsp-001 images-2012-001 maththink-2012-001 musicproduction-001
+23:54 melodie what does dsp stand for ?
+23:54 ubitux  digital signal processing
+23:54 melodie ok I see
+23:55 ubitux  but i didn't yet watch the maththink ones, i've not enough basis to understand properly dsp, musicproduction was relatively interesting but not very technical (just watched out of curiosity), and images was about video filtering and pretty nice overall
+23:55 melodie I tried to follow the python introductory course, but lost the timeline in the way, when there was some school vacation... and my son at home
+23:55 melodie maybe I can try to follow again a little before they end the course
+23:55 ubitux  i'm trying to learn japanese too, but the problem is... there is actually too much ressources
+23:55 melodie too much ?
+23:55 ubitux  yeah
+23:55 melodie you can't choose perhaps?
+23:56 ubitux  yeah
+23:56 ubitux  :))
+23:56 melodie are you in Paris?
+23:56 ubitux  yes
+23:56 melodie there is a blog related to Japonese lovers in Paris
+23:56 ubitux  i don't need more ressources ;)
+23:56 melodie I don't quite remember where but...
+23:56 melodie what about meeting with people to practice?
+23:57 ubitux  i don't like out doors :)
+23:57 melodie instead of more resources, I was thinking more about other types of resource
+23:57 ubitux  it's okay
+23:57 ubitux  i'll consider this when i'll have more basis
+23:57 ubitux  i know exactly how i'm supposed to learn, and what to learn
+23:58 ubitux  i just need to get a grip on myself
+23:58 ubitux  another problem is that i'm too involved in well... foss
+23:59 ubitux  (this one is my time eater ^)
+23:59 melodie sure
+23:59 melodie to you know "meetup" ?
+</pre></body></html>
